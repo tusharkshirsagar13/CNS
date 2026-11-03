@@ -44,3 +44,16 @@ public class Assignment3 {
         }
     }
 }
+
+/*
+ * This program measures how long RSA key generation, encryption and decryption take.
+ * It tests three key sizes: 1024, 2048 and 3072 bits.
+ * For each size, it starts a timer and generates a public and private key pair.
+ * It subtracts the start time from the current time to find the key generation time.
+ * It then tests messages of 64, 128, 256 and 384 bits with that key pair.
+ * For each message, it creates a byte array filled with zeros.
+ * It prepares the RSA cipher with the public key and times the encryption call.
+ * It prepares another cipher with the private key and times the decryption call.
+ * It converts the times from nanoseconds to milliseconds and prints them in a table.
+ * The table lets us compare the operations, and the times can vary between runs.
+ */

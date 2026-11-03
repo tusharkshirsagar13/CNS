@@ -145,3 +145,18 @@ public class Assignment9 {
         }
     }
 }
+
+/*
+ * This program has a menu for encrypting an image, decrypting it or exiting.
+ * When the user chooses encryption, it asks for the image path and reads the file as bytes.
+ * It generates a 256-bit AES key and saves the key in a separate file.
+ * It also creates a random 12-byte value called a nonce.
+ * It uses AES-GCM to encrypt the image bytes and create a tag for checking changes.
+ * It saves the nonce, encrypted bytes and tag together in the encrypted file.
+ * When the user chooses decryption, it reads the encrypted file and the saved key.
+ * It checks the file and key lengths, then separates the nonce from the encrypted bytes and tag.
+ * AES-GCM uses the key and nonce to decrypt the image and check the tag.
+ * If the check passes, the program saves the recovered image.
+ * If the key is wrong or the data has changed, it reports an error before saving an image.
+ * The menu repeats until the user chooses to exit.
+ */

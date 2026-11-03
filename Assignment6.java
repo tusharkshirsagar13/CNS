@@ -44,3 +44,16 @@ public class Assignment6 {
         sc.close();
     }
 }
+
+/*
+ * This program reads a line of text and calculates its SHA-1 digest.
+ * A digest is a fixed-length value that acts like a fingerprint for the input.
+ * The program converts the text to UTF-8 bytes before hashing it.
+ * It uses Java's MessageDigest class to calculate the SHA-1 hash.
+ * SHA-1 produces 20 bytes, which the program displays as 40 hexadecimal digits.
+ * The program prints the original text and its digest.
+ * It then creates a lowercase version of the original text.
+ * It calculates and prints the digest of the lowercase version in the same way.
+ * It compares the two digest strings and reports whether they match.
+ * For example, changing Hello to hello changes one letter and produces a different digest.
+ */

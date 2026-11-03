@@ -45,3 +45,16 @@ public class Assignment7{
         System.out.println("Modified Signature Valid: " + tamperedValid);
     }
 }
+
+/*
+ * This program shows how to sign a tender message and verify its signature.
+ * It first generates a 2048-bit DSA public and private key pair.
+ * The original message contains tender ID 101 and an amount of 500000.
+ * The program converts the message into UTF-8 bytes.
+ * It uses SHA256withDSA to hash the message and sign it with the private key.
+ * It displays the signature in Base64 so the signature bytes can be read as text.
+ * It then uses the public key to check the signature against the original message.
+ * The first check prints true because the signature matches the original message.
+ * The program changes the amount to 900000 and checks it with the original signature.
+ * The second check prints false because the message was changed after signing.
+ */

@@ -54,3 +54,16 @@ public class Assignment4 {
         sc.close();
     }
 }
+
+/*
+ * This program reads a full line of text and uses the fixed key 73.
+ * It goes through the message one character at a time.
+ * For each character, it takes its numeric value and applies XOR with the key.
+ * It rotates the resulting bits three places to the left within one byte.
+ * It writes each result as two uppercase hexadecimal digits.
+ * After processing all the characters, it prints the encrypted text.
+ * To decrypt, it reads the encrypted text two hexadecimal digits at a time.
+ * It converts each pair to a number and rotates its bits three places to the right.
+ * It applies XOR with 73 again to recover the original 8-bit character value.
+ * It joins the recovered characters and prints the decrypted message.
+ */

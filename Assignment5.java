@@ -68,3 +68,17 @@ public class Assignment5 {
         sc.close();
     }
 }
+
+/*
+ * This program shows a normal Diffie-Hellman exchange and then simulates an attack.
+ * It uses the public values p = 23 and g = 5.
+ * It reads private numbers for Alice and Bob from the keyboard.
+ * Each person uses their private number to calculate a public value with modPow().
+ * Alice combines Bob's public value with her private number, and Bob does the reverse.
+ * Both get the same shared secret in the normal exchange.
+ * The program then reads two private numbers for Eve and creates two fake public values.
+ * Eve sends one fake value to Alice in place of Bob's and the other to Bob in place of Alice's.
+ * Alice and Bob calculate their secrets using the fake values they received.
+ * Eve uses the real public values and her own private numbers to calculate both secrets.
+ * The program prints the results to show how Eve can learn the secrets by replacing public values.
+ */
